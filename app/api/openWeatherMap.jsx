@@ -14,7 +14,9 @@ module.exports = {
         return res.data.main.temp;
       }
     }, function (res) {
-       throw new Error(res.response.data.message);
+      throw new Error(res.response.data.message);
+//       throw new Error(err.response.data.message);
+//       throw new Error('City Name not Found');
     });
   }
 }
